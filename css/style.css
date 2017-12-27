@@ -5,7 +5,7 @@
 
 .checkbox > label {
   float: left;
-  min-width: 150px;
+  min-width: 100px;
 }
 
 .checkbox:after, .checkbox:before {
