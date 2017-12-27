@@ -1,0 +1,29 @@
+@import 'checkbox';
+
+$on: #0073aa;
+$bg: #D9CB9E;
+$off: #374140;
+
+.checkbox {
+    display: block;
+    padding: 15px 15px;
+
+    > label {
+        float: left;
+        min-width: 150px;
+    }
+
+    &:after,
+    &:before {
+        content: "";
+        display: table;
+    }
+
+    &:after {
+        clear: both;
+    }
+}
+
+div.ui-toggle {
+    @include ui-toggle(20px, $on, $off);
+}
